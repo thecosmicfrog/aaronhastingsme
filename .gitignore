@@ -1,0 +1,11 @@
+*.env
+*.log
+*.pot
+*.pyc
+.idea
+.vscode
+__pycache__
+_pgbackup
+media
+staticfiles_tmp
+

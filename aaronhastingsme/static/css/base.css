@@ -1,0 +1,82 @@
+body {
+    background-color: #fafafa !important;
+}
+
+.custom-card-col {
+    //margin-right: -0.5em;
+}
+
+a:active {
+   color: #212529;
+   text-decoration: none;
+}
+
+a:hover {
+   color: #212529;
+   text-decoration: none;
+}
+
+a:link {
+   color: #212529;
+   text-decoration: none;
+}
+
+a:visited {
+   color: #212529;
+   text-decoration: none;
+}
+
+.custom-card-img {
+    padding: 1em;
+}
+
+.custom-card-img-container {
+    width: 12em;
+    height: 12em;
+    margin: auto;
+}
+
+.custom-card-main {
+    width: 22em;
+    height: 19.5em;
+    transition: all 0.3s ease;
+}
+
+.custom-card-main:hover {
+    transform: scale(1.05);
+}
+
+.custom-profile-img-container {
+    width: 10em;
+    margin: auto;
+}
+
+.card {
+    width: auto;
+    margin: 1em;
+}
+
+h1 {
+    padding-top: 18px;
+    padding-left: 30px;
+    padding-bottom: 18px;
+    font-family: Arial !important;
+    font-weight: 600 !important;
+    font-size: 42px !important;
+}
+
+#heading-bar {
+    background: #FFD000;
+}
+
+.departures-arrivals-symbol {
+    height: 1em;
+    width: 1em;
+    margin-right: 0.5em;
+    margin-bottom: 0.1em;
+}
+
+.row {
+    margin-bottom: -1em;
+}
+
