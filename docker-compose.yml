@@ -3,20 +3,26 @@ version: '3'
 services:
   db:
     image: postgres
+    restart: always
+    network_mode: bridge
     env_file:
       - common.env
       - db.env
 
   web_aaronhastings.me:
     build: .
+    restart: always
+    network_mode: bridge
     env_file:
       - common.env
       - web_aaronhastings.me.env
-    command: python manage.py runserver 0.0.0.0:8000
+    command: gunicorn --bind 0.0.0.0:8000 aaronhastingsme.wsgi
     volumes:
       - .:/app
     ports:
       - "8000:8000"
     depends_on:
       - db
+    links:
+      - db:db
 
