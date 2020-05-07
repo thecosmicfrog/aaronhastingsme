@@ -1,0 +1,28 @@
+version: '3'
+
+services:
+  db:
+    image: postgres
+    restart: always
+    network_mode: bridge
+    env_file:
+      - common.env
+      - db.env
+
+  web_aaronhastings.me:
+    build: .
+    restart: always
+    network_mode: bridge
+    env_file:
+      - common.env
+      - web_aaronhastings.me.env
+    command: python3 manage.py runserver 0.0.0.0:8000
+    volumes:
+      - .:/app
+    ports:
+      - "8003:8000"
+    depends_on:
+      - db
+    links:
+      - db:db
+

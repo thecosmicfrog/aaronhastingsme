@@ -26,6 +26,10 @@ a:visited {
    text-decoration: none;
 }
 
+.custom-card-body-profile {
+    line-height: 1.8;
+}
+
 .custom-card-img {
     padding: 1em;
 }

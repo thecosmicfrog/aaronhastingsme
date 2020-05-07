@@ -5,8 +5,13 @@ def home(request):
     cards = {
         'profile': {
             'title': 'About me',
-            'text': '''Systems Engineer by day. Developer by night. DevOps/Agile. Dublin.
-                       Linux and open source enthusiast. Public transit and aviation geek. I automate things.''',
+            'text': '''Dublin, Ireland
+            Systems Engineer by day.
+            Developer by night.
+            DevOps/Agile.
+            Linux and open source enthusiast.
+            Public transit and aviation geek.
+            I automate things.''',
             'img_name': 'profile_photo'
         },
         'row_top': {

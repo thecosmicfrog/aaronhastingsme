@@ -12,15 +12,15 @@
 
 {% block content %}
 <div class="row">
-	<div class="col-xl-3">
-		<div class="card shadow p-3 mb-5 bg-white rounded">
+	<div class="col-xl-4">
+		<div class="card custom-card-profile shadow p-3 mb-5 bg-white rounded">
 			<div class="custom-profile-img-container">
 				<img class="card-img-top custom-card-img" src="{% static 'img/'|add:card_profile.img_name|add:'_logo.png' %}" alt="Profile photo">
 			</div>
 
-			<div class="card-body">
+			<div class="card-body custom-card-body-profile">
 				<h5 class="card-title">{{ card_profile.title }}</h5>
-				<p class="card-text">{{ card_profile.text }}</p>
+				<p class="card-text">{{ card_profile.text | linebreaks }}</p>
 			</div>
 		</div>
 	</div>
@@ -37,7 +37,7 @@
 
 						<div class="card-body">
 							<h5 class="card-title">{{ card.title }}</h5>
-							<p class="card-text">{{ card.text }}</p>
+							<p class="card-text">{{ card.text | linebreaks }}</p>
 						</div>
 					</div>
 				</a>
@@ -56,7 +56,7 @@
 
 						<div class="card-body">
 							<h5 class="card-title">{{ card.title }}</h5>
-							<p class="card-text">{{ card.text }}</p>
+							<p class="card-text">{{ card.text | linebreaks }}</p>
 						</div>
 					</div>
 				</a>
