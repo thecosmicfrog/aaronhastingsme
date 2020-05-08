@@ -1,3 +1,22 @@
+/*
+	Copyright © 2020 Aaron Hastings
+
+	This file is part of aaronhastings.me.
+
+	aaronhastings.me is free software: you can redistribute it and/or modify
+	it under the terms of the GNU Affero General Public License as published by
+	the Free Software Foundation, either version 3 of the License, or
+	(at your option) any later version.
+
+	aaronhastings.me is distributed in the hope that it will be useful,
+	but WITHOUT ANY WARRANTY; without even the implied warranty of
+	MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+	GNU Affero General Public License for more details.
+
+	You should have received a copy of the GNU Affero General Public License
+	along with aaronhastings.me.  If not, see <http://www.gnu.org/licenses/>.
+*/
+
 body {
     background-color: #fafafa !important;
 }
@@ -62,6 +81,13 @@ a:visited {
 .card {
     width: auto;
     margin: 1em;
+}
+
+#link-source-code {
+  position: fixed;
+  bottom: 8px;
+  right: 16px;
+  font-size: 12px;
 }
 
 .navbar {
