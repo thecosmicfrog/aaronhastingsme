@@ -26,9 +26,9 @@ a:visited {
    text-decoration: none;
 }
 
-.custom-card-body-profile {
-    line-height: 1.8;
-}
+//.custom-card-body-profile {
+//    line-height: 1.8;
+//}
 
 .custom-card-img {
     padding: 1em;
@@ -53,6 +53,10 @@ a:visited {
 .custom-profile-img-container {
     width: 10em;
     margin: auto;
+}
+
+.custom-table>tbody>tr>td, .custom-table>tbody>tr>th, .custom-table>tfoot>tr>td, .custom-table>tfoot>tr>th, .custom-table>thead>tr>td, .custom-table>thead>tr>th {
+    padding: 0.4em;
 }
 
 .card {

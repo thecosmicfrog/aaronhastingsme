@@ -19,8 +19,16 @@
 			</div>
 
 			<div class="card-body custom-card-body-profile">
-				<h5 class="card-title">{{ card_profile.title }}</h5>
-				<p class="card-text">{{ card_profile.text | linebreaks }}</p>
+				<table class="table table-borderless custom-table">
+					<tbody>
+						{% for profile_key, profile_value in card_profile.text.items %}
+						<tr>
+							<td class="align-middle"><img src="{% static 'img/'|add:profile_value.img_name|add:'.svg' %}" alt="Location icon"></td>
+							<td class="align-middle">{{ profile_value.text }}</td>
+						</tr>
+						{% endfor %}
+					</tbody>
+				</table>
 			</div>
 		</div>
 	</div>
