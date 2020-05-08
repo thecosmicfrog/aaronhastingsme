@@ -52,7 +52,7 @@ def home(request):
                 'title': 'Blog',
                 'text': 'My blog',
                 'img_name': 'blog',
-                'url': 'https://www.aaronhastings.me'
+                'url': 'https://blog.aaronhastings.me'
             },
             'luas_at_a_glance': {
                 'title': 'Luas at a Glance',
