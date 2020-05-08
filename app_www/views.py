@@ -15,7 +15,7 @@ def home(request):
                     'text': 'Systems Engineer by day',
                 },
                 'personal': {
-                    'img_name': 'deck',
+                    'img_name': 'couch',
                     'text': 'Developer by night',
                 },
                 'interest1': {
@@ -56,7 +56,7 @@ def home(request):
             },
             'luas_at_a_glance': {
                 'title': 'Luas at a Glance',
-                'text': 'My Android app for Dublin\'s light rail',
+                'text': 'Android app for Dublin\'s light rail',
                 'img_name': 'laag',
                 'url': 'https://play.google.com/store/apps/details?id=org.thecosmicfrog.luasataglance'
             }

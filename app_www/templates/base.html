@@ -31,9 +31,12 @@
 	</head>
 
 	<body>
-		<div id="heading-bar">
-			<h1>{% block heading %}{% endblock %}</h1>
-		</div>
+		<nav class="navbar navbar-light">
+			<a class="navbar-brand" href="#">
+				<img class="departures-arrivals-symbol" src="{% static 'img/departures.png' %}">
+				<span id="navbar-title">Aaron Hastings</span>
+			</a>
+		</nav>
 
 		<div id="content" class="container">
 			{% block content %}{% endblock %}
