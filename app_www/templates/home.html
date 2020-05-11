@@ -27,8 +27,8 @@
 
 {% block content %}
 <div class="row">
-	<div class="col-xl-4">
-		<div class="card custom-card-profile shadow p-3 mb-5 bg-white rounded">
+	<div class="col-xl-4 col-lg-4 col-md-6">
+		<div class="card custom-card-profile shadow p-3 m-4 bg-white rounded">
 			<div class="custom-profile-img-container">
 				<img class="card-img-top custom-card-img" src="{% static 'img/'|add:card_profile.img_name|add:'_logo.png' %}" alt="Profile photo">
 			</div>
@@ -48,12 +48,12 @@
 		</div>
 	</div>
 
-	<div class="col">
+	<div class="col-xl-8 col-lg-8 col-md-6">
 		<div class="row">
 			{% for card in cards.row_top.values %}
-			<div class="col-xl-6 custom-card-col">
+			<div class="col-xl-6 col-lg-6 col-md-12 custom-card-col">
 				<a href="{{ card.url }}" target="_blank">
-					<div class="card custom-card-main shadow p-3 mb-5 bg-white rounded">
+					<div class="card custom-card-main shadow pt-3 pr-3 pb-5 pl-3 m-4 bg-white rounded">
 						<div class="custom-card-img-container">
 							<img class="card-img-top custom-card-img" src="{% static 'img/'|add:card.img_name|add:'_logo.png' %}" alt="{{ card.title }} logo">
 						</div>
@@ -70,9 +70,9 @@
 
 		<div class="row">
 			{% for card in cards.row_bottom.values %}
-			<div class="col-xl-6 custom-card-col">
+			<div class="col-xl-6 col-lg-6 col-md-12 custom-card-col">
 				<a href="{{ card.url }}" target="_blank">
-					<div class="card custom-card-main shadow p-3 mb-5 bg-white rounded">
+					<div class="card custom-card-main shadow pt-3 pr-3 pb-5 pl-3 m-4 bg-white rounded">
 						<div class="custom-card-img-container">
 							<img class="card-img-top custom-card-img" src="{% static 'img/'|add:card.img_name|add:'_logo.png' %}" alt="{{ card.title }} logo">
 						</div>
